@@ -26,7 +26,7 @@ def get_files(root, dataset, faults, fault_label, signal_size, stride=None):
                 data.append(signal[start:end])
                 actual_labels.append(fault_label[name])
                 start += stride
-                end += signal_size
+                end = start + signal_size
 
     return data, actual_labels
 
