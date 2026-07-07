@@ -59,6 +59,32 @@ def parse_args():
     parser.add_argument('--zeta', type=float, default=10.0,
                         help='Parameter to control the increasing rate of "exp" tradeoff')
     parser.add_argument('--dropout', type=float, default=0., help='Dropout layer coefficient')
+
+    # MSSA_PLUS parameters
+    parser.add_argument('--source_ema_momentum', type=float, default=0.95,
+                        help='EMA momentum for MSSA_PLUS source reliability weighting')
+    parser.add_argument('--pseudo_temperature', type=float, default=0.5,
+                        help='Sharpening temperature for MSSA_PLUS ensemble pseudo labels')
+    parser.add_argument('--source_weight_tau', type=float, default=2.0,
+                        help='Softmax temperature for MSSA_PLUS source reliability weights')
+    parser.add_argument('--consistency_weight', type=float, default=0.2,
+                        help='Target classifier-consistency weight for MSSA_PLUS')
+    parser.add_argument('--mcc_weight', type=float, default=0.1,
+                        help='Target minimum class confusion weight for MSSA_PLUS')
+    parser.add_argument('--pseudo_threshold', type=float, default=0.0,
+                        help='Confidence threshold for MSSA_PLUS pseudo-label weighting')
+    parser.add_argument('--label_smoothing', type=float, default=0.0,
+                        help='Source classification label smoothing for MSSA_PLUS')
+    parser.add_argument('--axis_blend', type=float, default=0.35,
+                        help='Blend weight for MSSA_PLUS_HYBRID axis-derived class probabilities')
+    parser.add_argument('--axis_loss_weight', type=float, default=0.3,
+                        help='Source axis BCE loss weight for MSSA_PLUS_HYBRID')
+    parser.add_argument('--axis_nll_weight', type=float, default=0.2,
+                        help='Source axis-combination NLL loss weight for MSSA_PLUS_HYBRID')
+    parser.add_argument('--head_cons_weight', type=float, default=0.1,
+                        help='Source class-head/axis-head consistency weight for MSSA_PLUS_HYBRID')
+    parser.add_argument('--target_head_cons_weight', type=float, default=0.05,
+                        help='Target class-head/axis-head consistency weight for MSSA_PLUS_HYBRID')
     
     # save and load
     parser.add_argument('--save', type=bool, default=True, help='Save logs and trained model checkpoints')
@@ -69,3 +95,4 @@ def parse_args():
     args = parser.parse_args()
     return args
     
+
