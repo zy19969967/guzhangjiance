@@ -1,7 +1,7 @@
 # Transfer Learning Library for Fault Diagnosis
 
 ## Overview
-Welcome to our repository dedicated to advancing cross-domain fault diagnosis through transfer learning. Our focus lies in **single-source unsupervised domain adaptation**, **multi-source unsupervised domain adaptation** and **domain gneralalization**. Our library offers a rich suite of resources and methods, supporting **closed-set**, **open-set**, **partial**, and **universal** domain adaptation scenarios.
+Welcome to our repository dedicated to advancing cross-domain fault diagnosis through transfer learning. Our focus lies in **single-source unsupervised domain adaptation**, **multi-source unsupervised domain adaptation** and **domain gneralization**. Our library offers a rich suite of resources and methods, supporting **closed-set**, **open-set**, **partial**, and **universal** domain adaptation scenarios.
 
 
 ## ROBOT Acceleration Experiment Extension
