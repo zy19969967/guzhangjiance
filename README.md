@@ -1,7 +1,7 @@
 # Transfer Learning Library for Fault Diagnosis
 
 ## Overview
-Welcome to our repository dedicated to advancing cross-domain fault diagnosis through transfer learning. Our focus lies in **single-source unsupervised domain adaptation**, **multi-source unsupervised domain adaptation** and **domain gneralization**. Our library offers a rich suite of resources and methods, supporting **closed-set**, **open-set**, **partial**, and **universal** domain adaptation scenarios.
+Welcome to our repository dedicated to advancing cross-domain fault diagnosis through transfer learning. Our focus lies in **single-source unsupervised domain adaptation**, **multi-source unsupervised domain adaptation** and **domain gneralalization**. Our library offers a rich suite of resources and methods, supporting **closed-set**, **open-set**, **partial**, and **universal** domain adaptation scenarios.
 
 
 ## ROBOT Acceleration Experiment Extension
@@ -28,7 +28,7 @@ Please note: Due to extensive updates in version 2.0.0, models from this version
 - **DAN** - Learning transferable features with deep adaptation networks. [Published in ICML 2015](http://ise.thss.tsinghua.edu.cn/~mlong/doc/deep-adaptation-networks-icml15.pdf) | [View Code](/models/DAN.py)
 - **DANN** - Unsupervised domain adaptation by backpropagation. [Published in ICML 2015](http://proceedings.mlr.press/v37/ganin15.pdf) | [View Code](/models/DANN.py)
 - **MCD** - Maximum classifier discrepancy for unsupervised domain adaptation. [Published in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Saito_Maximum_Classifier_Discrepancy_CVPR_2018_paper.pdf) | [View Code](/models/MCD.py)
-- **MDD** - Bridging theory and algorithm for domain adaptation. [Published in ICML 2019](http://proceedings.mlr.press/v97/zhang19i.pdf) | [View Code](/models/MDD.py)
+- **MDD** - Bridging theory and algorithm for domain adaptation. [Published in ICML 2019](http://proceedings.mlr.press/v97/zhang19i/zhang19i.pdf) | [View Code](/models/MDD.py)
 - **MFSAN** - Aligning domain-specific distribution and classifier for cross-domain classification from multiple sources. [Published in AAAI 2019](https://ojs.aaai.org/index.php/AAAI/article/view/4551) | [View Code](/models/MFSAN.py) 
 - **MSSA** - A multi-source information transfer learning method with subdomain adaptation for cross-domain fault diagnosis. [Published in Knowledge-Based Systems 2022](https://reader.elsevier.com/reader/sd/pii/S0950705122001927?token=03BD384CA5D6E0E7E029B23C739C629913DE8F8BB37F6331F7D233FB6C57599BFFC86609EE63BE2F9FC43871D96A2F61&originRegion=us-east-1&originCreation=20230324021230) | [View Code](/models/MSSA.py)
 
@@ -81,7 +81,7 @@ Our repository supports several public datasets for fault diagnosis, with accomp
 - **[PU](https://groups.uni-paderborn.de/kat/BearingDataCenter/)** - Paderborn University dataset.
 - **[XJTU](https://biaowang.tech/xjtu-sy-bearing-datasets)** - Xi’an Jiaotong University dataset.
 - **[IMS](https://www.kaggle.com/datasets/vinayak123tyagi/bearing-dataset?resource=download)** - Intelligent Maintenance Systems dataset.
-- **[JNU](https://github.com/ClarkGableWang/JNU-Bearing-Dataset)** - 江南大学 dataset.
+- **[JNU](https://github.com/ClarkGableWang/JNU-Bearing-Dataset)** - Jiangnan University dataset.
 
 ### Setting Up Dataset Directory
 - Create a folder named "datasets" in the root directory of the cloned repository.
