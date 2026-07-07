@@ -1,0 +1,39 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local environments and notebooks
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Local datasets and generated dataset indexes
+datasets/
+datasets_smoke/
+raw_data/
+data/
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.mat
+*.npz
+*.robot
+
+# Training artifacts
+ckpt*/
+checkpoints/
+runs/
+outputs/
+logs/
+*.pth
+*.pt
+*.pkl
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
